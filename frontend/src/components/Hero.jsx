@@ -5,7 +5,7 @@ import heroImage from '@/images/heroIg.png'
 
 export function Hero({ user }) {
   return (
-    <Container className="relative flex gap-16 pt-20 pb-48 lg:mb-12 lg:pt-20">
+    <Container className="relative flex gap-16 pt-20 pb-36 lg:mb-12 lg:pt-20">
       {/* <Image
         className="absolute right-0 inset-y-0 h-[50%] object-contain blur-sm -z-10"
         src={heroImage}
