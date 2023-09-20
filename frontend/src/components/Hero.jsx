@@ -44,7 +44,8 @@ export function Hero({ user }) {
         <div className="mt-10 flex justify-start gap-x-6">
           {!user.value && <Button href="/register">Sign up here</Button>}
           <Button
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            href="https://www.youtube.com/watch?v=nnNCCfqVWU0"
+            target="_blank"
             variant="outline"
           >
             <svg
@@ -64,7 +65,7 @@ export function Hero({ user }) {
         data-aos-duration="1000"
       >
         <Image
-          className="absolute inset-0 h-full w-full object-cover rounded-b-xl"
+          className="absolute inset-0 h-full w-full rounded-b-xl object-cover"
           src={heroImage}
           alt=""
           unoptimized
