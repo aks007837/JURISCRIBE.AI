@@ -57,13 +57,17 @@ export function PrimaryFeatures() {
         unoptimized
         objectFit="fill"
       />
-      <Container className="relative">
+      <Container
+        className="relative rounded-lg bg-white/20 py-8 backdrop-blur-lg"
+        data-aos="zoom-out" data-aos-duration="1000"
+      >
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
             Everything you need to know about Juriscribe.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Let's Join Forces for Effortless Legal Documents: Simplicity and Clarity at Your Fingertips!
+            Let's Join Forces for Effortless Legal Documents: Simplicity and
+            Clarity at Your Fingertips!
           </p>
         </div>
         <Tab.Group

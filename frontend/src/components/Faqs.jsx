@@ -48,6 +48,8 @@ export function Faqs() {
       id="faq"
       aria-labelledby="faq-title"
       className="relative overflow-hidden bg-slate-50 py-20 sm:py-32"
+      data-aos="fade-up"
+      data-aos-duration="1300"
     >
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:mx-0">
@@ -70,7 +72,12 @@ export function Faqs() {
             <li key={columnIndex}>
               <ul role="list" className="flex flex-col gap-y-8">
                 {column.map((faq, faqIndex) => (
-                  <li key={faqIndex}>
+                  <li
+                    key={faqIndex}
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                    // data-aos-delay={`${faqIndex + 1000}`}
+                  >
                     <h3 className="font-display text-lg leading-7 text-slate-900">
                       {faq.question}
                     </h3>

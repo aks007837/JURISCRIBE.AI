@@ -6,6 +6,8 @@ export function CallToAction() {
     <section
       id="get-started-today"
       className="relative overflow-hidden pt-44 pb-24"
+      data-aos="zoom-in"
+      data-aos-duration="1500"
     >
       <Container className="relative">
         <div className="mx-auto max-w-lg text-center">
@@ -13,7 +15,7 @@ export function CallToAction() {
             Get started today
           </h2>
           <p className="mt-8 text-lg tracking-tight ">
-          Transform your legal journey with Scribe's AI-driven document creation, ensuring security and simplicity. Find your perfect document and embark on a worry-free legal path today.
+            Transform your legal journey with Scribe's AI-driven document creation, ensuring security and simplicity. Find your perfect document and embark on a worry-free legal path today.
           </p>
           <Button href="/register"  className="mt-10">
             Try Juriscribe now

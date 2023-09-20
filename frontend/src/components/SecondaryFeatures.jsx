@@ -226,6 +226,8 @@ export function SecondaryFeatures({ user }) {
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
       className="pt-20 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">

@@ -4,7 +4,11 @@ import { Container } from '@/components/Container'
 
 export function Hero({ user }) {
   return (
-    <Container className="pt-20 pb-48 lg:mb-12 text-center lg:pt-36">
+    <Container
+      className="pt-20 pb-48 text-center lg:mb-12 lg:pt-36"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
         {' '}
         Your{' '}
