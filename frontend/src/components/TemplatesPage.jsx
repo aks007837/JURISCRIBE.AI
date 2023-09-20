@@ -3,49 +3,57 @@ import React from 'react'
 const templateData = [
   {
     title: 'Non-disclosure agreement',
-    image: 'https://dummyimage.com/420x260',
+    image:
+      'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     title: 'Employment Agreement',
-    image: 'https://dummyimage.com/420x260',
+    image:
+      'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     title: 'End-user license agreement',
-    image: 'https://dummyimage.com/420x260',
+    image:
+      'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     title: 'Privacy policy',
-    image: 'https://dummyimage.com/420x260',
+    image:
+      'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     title: 'End-user license agreement',
-    image: 'https://dummyimage.com/420x260',
+    image:
+      'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     title: 'Contingent contract',
-    image: 'https://dummyimage.com/420x260',
+    image:
+      'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     title: 'Partnership agreements',
-    image: 'https://dummyimage.com/420x260',
+    image:
+      'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     title: 'Memorandum of understanding',
-    image: 'https://dummyimage.com/420x260',
+    image:
+      'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
