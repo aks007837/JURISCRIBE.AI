@@ -106,7 +106,7 @@ export function Header({ user, key }) {
       progress: undefined,
       theme: 'light',
     })
-    setTimeout(() => router.push('/'), 5000)
+    setTimeout(() => router.push('/'), 2000)
   }
   return (
     <header className="py-8 ">
@@ -124,7 +124,9 @@ export function Header({ user, key }) {
             </Link>
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="#features">Features</NavLink>
-              <NavLink href="#secondary-features">Services</NavLink>
+              {user.value && (
+                <NavLink href="#secondary-features">Services</NavLink>
+              )}
               {/* <NavLink href="#pricing">Pricing</NavLink> */}
             </div>
           </div>

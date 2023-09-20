@@ -1,5 +1,5 @@
 import Image from 'next/future/image'
-
+import backgroundImage from '@/images/background-faqs.jpg'
 import { Container } from '@/components/Container'
 
 const faqs = [
@@ -47,10 +47,19 @@ export function Faqs() {
     <section
       id="faq"
       aria-labelledby="faq-title"
-      className="relative overflow-hidden bg-slate-50 py-20 sm:py-32"
+      className="relative overflow-hidden bg-slate-50 bg-gradient-to-b from-stone-50 to-cyan-100 py-20 sm:py-32"
       data-aos="fade-up"
       data-aos-duration="1300"
     >
+      {/* <Image
+        className="absolute top-0 left-1/2 max-w-none translate-x-[-30%] -translate-y-1/4"
+        src={backgroundImage}
+        alt=""
+        opacity="60%"
+        width={1558}
+        height={946}
+        unoptimized
+      /> */}
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
