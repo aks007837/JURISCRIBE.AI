@@ -13,13 +13,13 @@ const features = [
   {
     title: 'Juri',
     description:
-      "AI-powered legal guidance assistant designed to provide instant answers and support for navigating legal complexities.",
+      'AI-powered legal guidance assistant designed to provide instant answers and support for navigating legal complexities.',
     image: screenshotPayroll,
   },
   {
     title: 'Scribe',
     description:
-      "AI-powered tool for simplifying and streamlining the creation of legal documents using plain language.",
+      'AI-powered tool for simplifying and streamlining the creation of legal documents using plain language.',
     image: screenshotExpenses,
   },
 ]
@@ -59,7 +59,8 @@ export function PrimaryFeatures() {
       />
       <Container
         className="relative rounded-lg bg-white/20 py-8 backdrop-blur-lg"
-        data-aos="zoom-out" data-aos-duration="1000"
+        data-aos="zoom-out"
+        data-aos-duration="1000"
       >
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
