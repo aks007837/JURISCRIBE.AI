@@ -9,18 +9,29 @@ import screenshotExpenses from '@/images/screenshots/expenses.png'
 import screenshotPayroll from '@/images/screenshots/payroll.png'
 import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
+// import juriDemo from '@/videos/screencasts/juridemo.mp4'
+// import scribeDemo from '@/videos/screencasts/scribedemo.mp4'
+
+const juriDemoVideo = 'https://cdn.discordapp.com/attachments/1138756094005608454/1153940079153266698/juridemo.mp4'
+
+const scribeDemoVideo = 'https://cdn.discordapp.com/attachments/1138756094005608454/1153945822367592508/scribedemo.mp4'
+
 const features = [
   {
     title: 'Juri',
     description:
-      "AI-powered legal guidance assistant designed to provide instant answers and support for navigating legal complexities.",
+      'AI-powered legal guidance assistant designed to provide instant answers and support for navigating legal complexities.',
     image: screenshotPayroll,
+    video:
+      juriDemoVideo,
   },
   {
     title: 'Scribe',
     description:
-      "AI-powered tool for simplifying and streamlining the creation of legal documents using plain language.",
+      'AI-powered tool for simplifying and streamlining the creation of legal documents using plain language.',
     image: screenshotExpenses,
+    video:
+      scribeDemoVideo,
   },
 ]
 
@@ -116,7 +127,7 @@ export function PrimaryFeatures() {
                   ))}
                 </Tab.List>
               </div>
-              {/* <Tab.Panels className="lg:col-span-7">
+              <Tab.Panels className="lg:col-span-7">
                 {features.map((feature) => (
                   <Tab.Panel key={feature.title} unmount={false}>
                     <div className="relative sm:px-6 lg:hidden">
@@ -125,18 +136,19 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                      <Image
+                    <div className="mt-10 w-[45rem] overflow-hidden rounded-xl bg-slate-50 shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 ">
+                      {/* <Image
                         className="w-full"
                         src={feature.image}
                         alt=""
                         priority
                         sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
-                      />
+                      /> */}
+                      <video autoPlay loop muted src={feature.video} className='w-full'></video>
                     </div>
                   </Tab.Panel>
                 ))}
-              </Tab.Panels> */}
+              </Tab.Panels>
             </>
           )}
         </Tab.Group>
