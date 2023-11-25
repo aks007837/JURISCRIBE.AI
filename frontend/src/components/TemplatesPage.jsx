@@ -1,12 +1,15 @@
 import React from 'react'
+import { useRouter } from 'next/router'
+import { Button } from './Button'
 
 const templateData = [
   {
-    title: 'Non-disclosure agreement',
+    title: 'Birth Certificate',
     image:
       'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    file: 'BirthCertificate',
   },
   {
     title: 'Employment Agreement',
@@ -14,6 +17,7 @@ const templateData = [
       'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    file: 'EmployeeAgreement',
   },
   {
     title: 'End-user license agreement',
@@ -21,6 +25,7 @@ const templateData = [
       'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    file: 'BirthCertificate',
   },
   {
     title: 'Privacy policy',
@@ -28,6 +33,7 @@ const templateData = [
       'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    file: 'BirthCertificate',
   },
   {
     title: 'End-user license agreement',
@@ -35,6 +41,7 @@ const templateData = [
       'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    file: 'BirthCertificate',
   },
   {
     title: 'Contingent contract',
@@ -42,6 +49,7 @@ const templateData = [
       'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    file: 'BirthCertificate',
   },
   {
     title: 'Partnership agreements',
@@ -49,6 +57,7 @@ const templateData = [
       'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    file: 'BirthCertificate',
   },
   {
     title: 'Memorandum of understanding',
@@ -56,10 +65,20 @@ const templateData = [
       'https://signaturely.com/wp-content/uploads/2022/08/non-disclosure-agreement-uplead.jpg',
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    file: 'BirthCertificate',
   },
 ]
 
 const templateCard = ({ image, title, content }) => {
+  const router = useRouter()
+  const handleSubmit = () => {
+    router.push({
+      pathname: '/form',
+      query: {
+        val: JSON.stringify('Hi'),
+      },
+    })
+  }
   return (
     <div className="w-full cursor-pointer p-4 md:w-1/2 lg:w-1/4">
       <a className="relative block h-48 overflow-hidden rounded">
@@ -74,6 +93,7 @@ const templateCard = ({ image, title, content }) => {
           {title}
         </h3> */}
         <h2 className="title-font text-lg font-medium text-white">{title}</h2>
+        <Button onClick={handleSubmit}>Generate</Button>
       </div>
     </div>
   )

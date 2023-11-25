@@ -79,7 +79,7 @@ const pqr = () => {
           </>
         ))}
       </div>
-      <div className="sticky bottom-0 bg-[#1A232E] pb-5">
+      <div className="sticky bottom-0 bg-white pb-5">
         <div className="px=3 m-auto w-5/6 rounded-xl bg-slate-800 py-4">
           <form onSubmit={handleSubmit} className="margin-auto text-center">
             <input
