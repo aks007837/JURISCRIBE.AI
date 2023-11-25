@@ -101,13 +101,13 @@ const features = [
 function Feature({ feature, isActive, className, ...props }) {
   return (
     <div
-      className={clsx(className, !isActive && 'opacity-75 hover:opacity-100')}
+      className={clsx(className, 'opacity-75 hover:opacity-100 group transition-colors duration-300')}
       {...props}
     >
       <div
         className={clsx(
-          'w-9 rounded-lg',
-          isActive ? 'bg-blue-600' : 'bg-slate-500'
+          'w-9 rounded-lg bg-slate-500 group-hover:bg-blue-500 transition duration-300',
+          // isActive ? 'bg-blue-600' : 'bg-slate-500'
         )}
       >
         <svg aria-hidden="true" className="h-9 w-9" fill="none">
@@ -116,15 +116,15 @@ function Feature({ feature, isActive, className, ...props }) {
       </div>
       <h3
         className={clsx(
-          'mt-6 text-sm font-medium',
-          isActive ? 'text-blue-600' : 'text-slate-600'
+          'mt-6 text-sm font-medium text-slate-600 group-hover:text-blue-600 transition duration-300',
+          // isActive ? 'text-blue-600' : 'text-slate-600'
         )}
       >
         {/* {feature.name} */}
         <Button
           className={clsx(
-            'mt-6 text-sm font-medium',
-            isActive ? 'text-blue-600' : 'text-slate-600'
+            'mt-6 text-sm font-medium text-slate-600 group-hover:text-blue-600 transition duration-300',
+            // isActive ? 'text-blue-600' : 'text-slate-600'
           )}
           href={feature.href}
           color="white"
